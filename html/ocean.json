@@ -1,0 +1,105 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"title": "Erddap Forecasts",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"3": 1,
+				"4": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "forecastIndicator",
+					"settings": {
+						"title": "GFS Weather Data",
+						"url": "http://erddap.marine.ie/erddap/tabledap/GFS-WeatherTimeSeries.json?time,stationID&time=CHECKDATET00:00:00Z&stationID=%22Galway%22",
+						"warn_days": "5",
+						"error_days": "5",
+						"hours": "12"
+					}
+				},
+				{
+					"type": "forecastIndicator",
+					"settings": {
+						"title": "SWAN Wave Forecast",
+						"url": "http://erddap.marine.ie/erddap/griddap/IMI_EATL_WAVE.json?time[(CHECKDATET21:00:00Z):1:(CHECKDATET21:00:00Z)]",
+						"warn_days": "5",
+						"error_days": "5",
+						"hours": "12"
+					}
+				},
+				{
+					"type": "forecastIndicator",
+					"settings": {
+						"title": "NE Atlantic Model",
+						"url": "http://erddap.marine.ie/erddap/griddap/IMI_NEATL.json?time[(CHECKDATET00:00:00Z):1:(CHECKDATET00:00:00Z)],latitude[(48.00625):1:(57.99375)],longitude[(-17.99375):1:(-1.00625)]",
+						"warn_days": "3",
+						"error_days": "3",
+						"hours": "12"
+					}
+				},
+				{
+					"type": "forecastIndicator",
+					"settings": {
+						"title": "Bantry ASIMUTH",
+						"url": "http://erddap.marine.ie/erddap/griddap/BANTRY_PARTICLES.json?time[(CHECKDATET00:00:00Z):1:(CHECKDATET00:00:00Z)]",
+						"warn_days": "0",
+						"error_days": "0",
+						"hours": "12"
+					}
+				},
+				{
+					"type": "forecastIndicator",
+					"settings": {
+						"title": "Connemara Model",
+						"url": "http://erddap.marine.ie/erddap/griddap/IMI_CONN_2D.json?time[(CHECKDATET00:00:00Z):1:(CHECKDATET00:00:00Z)]",
+						"warn_days": "3",
+						"error_days": "3",
+						"hours": "12"
+					}
+				}
+			]
+		},
+		{
+			"title": "Services",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"3": 2,
+				"4": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "miprIndicator",
+					"settings": {
+						"title": "Cluster Management Software",
+						"url": "http://spiddal.marine.ie/ping/cluster",
+						"link": "http://10.11.0.74/"
+					}
+				},
+				{
+					"type": "miprIndicator",
+					"settings": {
+						"title": "Thredds",
+						"url": "http://spiddal.marine.ie/ping/thredds",
+						"link": "http://milas.marine.ie/thredds"
+					}
+				}
+			]
+		}
+	],
+	"datasources": [],
+	"columns": 4
+}
