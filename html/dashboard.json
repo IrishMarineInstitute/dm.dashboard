@@ -283,12 +283,6 @@
 				{
 					"type": "mipcpIndicator",
 					"settings": {
-						"hostname": "cluster03"
-					}
-				},
-				{
-					"type": "mipcpIndicator",
-					"settings": {
 						"hostname": "cluster04"
 					}
 				},
@@ -472,7 +466,7 @@
 				"1": 105,
 				"2": 49,
 				"3": 31,
-				"4": 17
+				"4": 15
 			},
 			"col": {
 				"1": 1,
