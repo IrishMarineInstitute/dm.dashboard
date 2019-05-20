@@ -270,22 +270,16 @@
 				"1": 49,
 				"2": 25,
 				"3": 17,
-				"4": 9
+				"4": 25
 			},
 			"col": {
 				"1": 1,
 				"2": 2,
 				"3": 2,
-				"4": 3
+				"4": 4
 			},
 			"col_width": 1,
 			"widgets": [
-				{
-					"type": "mipcpIndicator",
-					"settings": {
-						"hostname": "cluster04"
-					}
-				},
 				{
 					"type": "mipcpIndicator",
 					"settings": {
@@ -466,7 +460,7 @@
 				"1": 105,
 				"2": 49,
 				"3": 31,
-				"4": 15
+				"4": 9
 			},
 			"col": {
 				"1": 1,
@@ -506,6 +500,15 @@
 				{
 					"type": "midasApplicationIndicator",
 					"settings": {
+						"application_name": "AIS Belmullet to geoJSON",
+						"url": "http://noderedais.dm.marine.ie/monitoring/belmullet2geojson",
+						"warning_timeout": "60",
+						"error_timeout": "300"
+					}
+				},
+				{
+					"type": "midasApplicationIndicator",
+					"settings": {
 						"application_name": "AIS Rinville to geoJSON",
 						"url": "http://noderedais.dm.marine.ie/monitoring/aisrinville12geojson",
 						"warning_timeout": "60",
@@ -528,6 +531,15 @@
 						"url": "http://gconode03.dm.marine.ie/monitoring/nms",
 						"warning_timeout": "70",
 						"error_timeout": "130"
+					}
+				},
+				{
+					"type": "midasApplicationIndicator",
+					"settings": {
+						"application_name": "node-red erddapiwavebuoys2kafka",
+						"url": "http://noderedwavebuoys.dm.marine.ie/monitoring/erddapiwavebuoys2kafka",
+						"warning_timeout": "65",
+						"error_timeout": "300"
 					}
 				}
 			]

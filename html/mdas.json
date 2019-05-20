@@ -19,7 +19,7 @@
 				{
 					"type": "waveBuoyIndicator",
 					"settings": {
-						"station_id": "Belmullet Wave Buoy Berth A",
+						"station_id": "AMETS Berth A Wave Buoy",
 						"warn_minutes": "60",
 						"error_minutes": "120"
 					}
@@ -27,7 +27,7 @@
 				{
 					"type": "waveBuoyIndicator",
 					"settings": {
-						"station_id": "Belmullet Wave Buoy Berth B",
+						"station_id": "AMETS Berth B Wave Buoy",
 						"warn_minutes": "60",
 						"error_minutes": "120"
 					}
@@ -35,15 +35,7 @@
 				{
 					"type": "waveBuoyIndicator",
 					"settings": {
-						"station_id": "Galway Bay Wave Buoy",
-						"warn_minutes": "60",
-						"error_minutes": "120"
-					}
-				},
-				{
-					"type": "waveBuoyIndicator",
-					"settings": {
-						"station_id": "Westwave MK3",
+						"station_id": "SmartBay Wave Buoy",
 						"warn_minutes": "60",
 						"error_minutes": "120"
 					}
