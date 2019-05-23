@@ -541,6 +541,14 @@
 						"warning_timeout": "65",
 						"error_timeout": "300"
 					}
+				},
+				{
+					"type": "miprIndicator",
+					"settings": {
+						"title": "Argo Collector",
+						"url": "https://erddap3.marine.ie/erddap/tabledap/argoFloats.htmlTable?platform_number%2Ctime&time%3Enow-5days&orderByMax(%22platform_number%2Ctime%22)",
+						"link": "https://erddap3.marine.ie/erddap/tabledap/argoFloats.htmlTable?platform_number%2Ctime&time%3Enow-5days&orderByMax(%22platform_number%2Ctime%22)"
+					}
 				}
 			]
 		}
