@@ -24,8 +24,10 @@
 					"type": "midasIndicator",
 					"settings": {
 						"device_type": "fluorometers",
-						"device": "WL-ECO-FLNTU-3137",
-						"ext": ".txt"
+						"device": "WL-ECO-FLNTU-4476",
+						"ext": ".txt",
+						"format": "{device}_{date}_{time}{extension}",
+						"within_minutes": "5"
 					}
 				},
 				{
@@ -40,7 +42,7 @@
 					"type": "midasIndicator",
 					"settings": {
 						"device_type": "hydrophones",
-						"device": "SBF1323",
+						"device": "SBF1622",
 						"ext": "00.txt",
 						"format": "{device}_{date}_{time}{extension}",
 						"within_minutes": "8"
