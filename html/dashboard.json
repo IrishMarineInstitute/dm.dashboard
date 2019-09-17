@@ -35,7 +35,9 @@
 					"settings": {
 						"device_type": "ctds",
 						"device": "I-OCEAN7-304-1214551",
-						"ext": ".txt"
+						"ext": ".txt",
+						"format": "{device}_{date}_{time}{extension}",
+						"within_minutes": "5"
 					}
 				},
 				{
@@ -65,6 +67,16 @@
 						"url": "http://spiddal.marine.ie/data/audio/ICListenRecordings/{year}/{month}/{day}/",
 						"link": "http://spiddal.marine.ie/data/audio/ICListenRecordings/{year}/{month}/{day}/",
 						"within_seconds": "300"
+					}
+				},
+				{
+					"type": "midasIndicator",
+					"settings": {
+						"device_type": "adcps",
+						"device": "TRDI-WHB600Hz-10457",
+						"ext": ".pd0",
+						"format": "{device}_{date}_{time}{extension}",
+						"within_minutes": "10"
 					}
 				}
 			]
@@ -197,6 +209,15 @@
 						"url": "http://audio.spidvid.dm.marine.ie/",
 						"warning_timeout": "30",
 						"error_timeout": "300"
+					}
+				},
+				{
+					"type": "midasApplicationIndicator",
+					"settings": {
+						"application_name": "ADCP",
+						"url": "http://adcp.gconode01.dm.marine.ie",
+						"warning_timeout": "400",
+						"error_timeout": "800"
 					}
 				}
 			]
@@ -351,7 +372,7 @@
 				"1": 85,
 				"2": 37,
 				"3": 21,
-				"4": 13
+				"4": 15
 			},
 			"col": {
 				"1": 1,
@@ -425,7 +446,7 @@
 				"1": 97,
 				"2": 49,
 				"3": 29,
-				"4": 19
+				"4": 21
 			},
 			"col": {
 				"1": 1,
