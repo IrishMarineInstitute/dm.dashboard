@@ -332,7 +332,7 @@
 					"type": "midasmcIndicator",
 					"settings": {
 						"device_type": "fluorometers",
-						"device": "WL-ECO-FLNTU-3137"
+						"device": "WL-ECO-FLNTU-4476"
 					}
 				},
 				{
@@ -346,7 +346,7 @@
 					"type": "midasmcIndicator",
 					"settings": {
 						"device_type": "adcps",
-						"device": "TRDI-WHB600Hz-10488"
+						"device": "TRDI-WHB600Hz-10457"
 					}
 				},
 				{
